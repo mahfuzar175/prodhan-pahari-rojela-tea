@@ -267,30 +267,35 @@
         flex-wrap: wrap;
         justify-content: center;
       }
+      .btn-wa,
+      .btn-call {
+        width: 160px;
+        justify-content: center;
+      }
       .btn-wa {
         display: inline-flex;
         align-items: center;
         gap: 6px;
         background: transparent;
-        color: #075e54;
+        color: #25d366;
         font-family: "Anek Bangla", sans-serif;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 700;
         padding: 10px 20px;
         border-radius: 30px;
-        border: 2px solid #006d60;
+        border: 2px solid #25d366;
         cursor: pointer;
         text-decoration: none;
         transition: all 0.2s;
-        fill: #075e54;
+        fill: #25d366;
       }
       .btn-wa svg,
       .btn-wa i {
-        fill: #075e54;
-        color: #075e54;
+        fill: #25d366;
+        color: #25d366;
       }
       .btn-wa:hover {
-        background: #075e54;
+        background: #25d366;
         color: #fff;
       }
       .btn-wa:hover svg,
@@ -306,7 +311,7 @@
         color: #0084ff;
         font-family: "Anek Bangla", sans-serif;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 700;
         padding: 10px 20px;
         border-radius: 30px;
         border: 2px solid #0084ff;
@@ -395,6 +400,15 @@
         color: #4b5563;
         line-height: 1.5;
       }
+
+      @media (max-width: 576px) {
+        .pack-sec {
+          margin-bottom: 25px;
+        }
+        .hero-sub {
+          font-size: 15px;
+        }
+      }
       @media (min-width: 768px) {
         #hero-compact {
           padding: 60px 20px;
@@ -471,6 +485,7 @@
         margin: 0 auto;
         animation: fade-up 0.8s 0.4s ease-out both;
       }
+
       .col-line {
         width: 0;
         height: 4px;
@@ -501,10 +516,10 @@
       }
       @media (max-width: 768px) {
         .col-title {
-          font-size: 26px;
+          font-size: 23px;
         }
         .col-desc {
-          font-size: 15px;
+          font-size: 14px;
         }
       }
 
@@ -519,6 +534,12 @@
         max-width: 960px;
         margin: 0 auto;
         padding: 10px 15px 10px;
+        margin-bottom: 60px;
+      }
+      @media (max-width: 576px) {
+        .pack-sec {
+          margin-bottom: 25px;
+        }
       }
       .pack-grid {
         display: grid;
@@ -761,6 +782,12 @@
         color: #4b5563;
         line-height: 1.7;
       }
+
+      @media (max-width: 576px) {
+        .desc-intro {
+          font-size: 13px;
+        }
+      }
       .desc-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -773,19 +800,27 @@
         border-radius: 14px;
         padding: 20px;
       }
+
+      .desc-block:hover {
+        transform: translateY(-0.6px);
+
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+      }
+
       .desc-block-hd {
         display: flex;
         align-items: center;
         gap: 8px;
         font-family: "Anek Bangla", sans-serif;
-        font-size: 15px;
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 800;
         color: #92400e;
         margin-bottom: 12px;
       }
       .desc-block-hd i {
         color: #b45309;
       }
+
       .desc-list {
         list-style: none;
         margin: 0;
@@ -1034,7 +1069,13 @@
       /* ══════════════════════════════════
            ORDER HEADER
         ══════════════════════════════════ */
-      .ord-hdr{max-width:800px;margin:0 auto 20px;padding:0 0 10px;text-align:center;font-family:'Anek Bangla',sans-serif}
+      .ord-hdr {
+        max-width: 800px;
+        margin: 0 auto 20px;
+        padding: 0 0 10px;
+        text-align: center;
+        font-family: "Anek Bangla", sans-serif;
+      }
       .ord-badge {
         display: inline-flex;
         align-items: center;
@@ -1075,11 +1116,11 @@
            Product bg: #FFF1F0
         ══════════════════════════════════ */
       #Checkout {
-        background: #f5f5f5;
+        background: white;
         padding: 30px 15px 50px;
       }
       .co-wrap {
-           max-width:1000px;
+        max-width: 1000px;
         margin: 0 auto;
       }
 
@@ -1098,7 +1139,6 @@
         margin-bottom: 24px;
       }
 
-      
       @media (max-width: 520px) {
         .yp-grid {
           grid-template-columns: 1fr;
@@ -1241,7 +1281,6 @@
       }
       .co-right {
         width: 100%;
-        
       }
       @media (min-width: 768px) {
         .co-right {
@@ -1556,15 +1595,15 @@
 
       /* Empty cart state */
       .otbl tbody tr.empty-cart-row td,
-.otbl tbody tr.empty-cart-row td:last-child {
-  text-align: center !important;
-  padding: 26px 14px !important;
-  color: #999;
-  font-family: "Anek Bangla", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  white-space: normal;
-}
+      .otbl tbody tr.empty-cart-row td:last-child {
+        text-align: center !important;
+        padding: 26px 14px !important;
+        color: #999;
+        font-family: "Anek Bangla", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        white-space: normal;
+      }
 
       /* Mobile responsive timer */
       @media (max-width: 767px) {
@@ -1604,168 +1643,195 @@
       /* ══════════════════════════════════
      TABLET RESPONSIVE (768px – 1024px)
   ══════════════════════════════════ */
-@media (min-width: 768px) and (max-width: 1024px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .co-wrap {
+          max-width: 100%;
+          padding: 0 10px;
+        }
 
-  .co-wrap {
-    max-width: 100%;
-    padding: 0 10px;
-  }
+        /* Two columns thakbe, kintu balanced width */
+        .co-cols {
+          gap: 20px;
+        }
+        .co-right {
+          width: 360px;
+        }
+        .co-left-in {
+          max-width: 100%;
+        }
 
-  /* Two columns thakbe, kintu balanced width */
-  .co-cols {
-    gap: 20px;
-  }
-  .co-right {
-    width: 360px;
-  }
-  .co-left-in {
-    max-width: 100%;
-  }
+        /* Your Products cards */
+        .yp-thumb {
+          width: 50px;
+          height: 50px;
+        }
+        .yp-n {
+          font-size: 12px;
+        }
 
-  /* Your Products cards */
-  .yp-thumb {
-    width: 50px;
-    height: 50px;
-  }
-  .yp-n {
-    font-size: 12px;
-  }
+        /* Form fields */
+        .cf input {
+          height: 44px;
+          font-size: 14px;
+          padding: 10px 12px;
+        }
+        .co-left-title {
+          font-size: 17px;
+        }
 
-  /* Form fields */
-  .cf input {
-    height: 44px;
-    font-size: 14px;
-    padding: 10px 12px;
-  }
-  .co-left-title {
-    font-size: 17px;
-  }
+        /* Order review table */
+        .otbl thead th,
+        .otbl tbody td,
+        .otbl tfoot th,
+        .otbl tfoot td {
+          padding: 8px 10px;
+          font-size: 13px;
+          font-family: "Anek Bangla", sans-serif;
+        }
+        .oi-img {
+          width: 38px;
+          height: 38px;
+        }
+        .oi-nm {
+          font-size: 12px;
+        }
 
-  /* Order review table */
-  .otbl thead th,
-  .otbl tbody td,
-  .otbl tfoot th,
-  .otbl tfoot td {
-    padding: 8px 10px;
-    font-size: 13px;
-    font-family: "Anek Bangla", sans-serif;
-  }
-  .oi-img {
-    width: 38px;
-    height: 38px;
-  }
-  .oi-nm {
-    font-size: 12px;
-  }
+        /* Place order button */
+        .co-btn {
+          font-size: 17px;
+          padding: 14px;
+        }
 
-  /* Place order button */
-  .co-btn {
-    font-size: 17px;
-    padding: 14px;
-  }
+        /* Order header */
+        .ord-title,
+        .col-title {
+          font-size: 26px;
+        }
+        .ord-desc,
+        .col-desc {
+          font-size: 15px;
+        }
 
-  /* Order header */
-  .ord-title,
-  .col-title {
-    font-size: 26px;
-  }
-  .ord-desc,
-  .col-desc {
-    font-size: 15px;
-  }
+        /* Pack cards */
+        .pack-grid {
+          gap: 16px;
+        }
+      }
 
-  /* Pack cards */
-  .pack-grid {
-    gap: 16px;
-  }
-}
-
-/* Narrower tablets / large phones landscape (600px–767px):
+      /* Narrower tablets / large phones landscape (600px–767px):
    force single column stack for readability */
-@media (min-width: 600px) and (max-width: 767px) {
-  .co-cols {
-    flex-direction: column;
-  }
-  .co-right {
-    width: 100%;
-  }
-  .co-left {
-    align-items: stretch;
-  }
-  .co-left-in {
-    max-width: 100%;
-  }
-}
+      @media (min-width: 600px) and (max-width: 767px) {
+        .co-cols {
+          flex-direction: column;
+        }
+        .co-right {
+          width: 100%;
+        }
+        .co-left {
+          align-items: stretch;
+        }
+        .co-left-in {
+          max-width: 100%;
+        }
+      }
 
-/* Mobile sticky order bar - space তৈরি করার জন্য */
-body {
-  padding-bottom: 70px;
-}
-@media (min-width: 768px) {
-  body {
-    padding-bottom: 0;
-  }
-}
+      /* Mobile sticky order bar - space তৈরি করার জন্য */
+      body {
+        padding-bottom: 70px;
+      }
+      @media (min-width: 768px) {
+        body {
+          padding-bottom: 0;
+        }
+      }
 
-.mobile-sticky {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9000;
-  background: #fff;
-  border-top: 1.5px solid #fecdd3;
-  padding: 10px 16px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 -4px 20px rgba(190, 18, 60, 0.12);
-}
-@media (min-width: 768px) {
-  .mobile-sticky {
-    display: none;
-  }
-}
-.mobile-total {
-  font-family: "Anek Bangla", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  color: #111827;
-  flex-shrink: 0;
-}
-.mobile-total small {
-  display: block;
-  font-size: 11px;
-  font-weight: 500;
-  color: #6b7280;
-}
-.mobile-order-btn {
-  flex: 1;
-  padding: 12px;
-  background: #be123c;
-  color: #fff;
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
-  font-family: "Anek Bangla", sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  transition: all 0.2s;
-  animation: btn-pulse 2s infinite;
-}
-.mobile-order-btn:hover {
-  background: #9f1239;
-}
-.mobile-order-btn:disabled {
-  background: #d1a5b0;
-  cursor: not-allowed;
-  animation: none;
-}
+      .mobile-sticky {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9000;
+        background: #fff;
+        border-top: 1.5px solid #fecdd3;
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 -4px 20px rgba(190, 18, 60, 0.12);
+      }
+      @media (min-width: 768px) {
+        .mobile-sticky {
+          display: none;
+        }
+      }
+      .mobile-total {
+        font-family: "Anek Bangla", sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        color: #111827;
+        flex-shrink: 0;
+      }
+      .mobile-total small {
+        display: block;
+        font-size: 11px;
+        font-weight: 500;
+        color: #6b7280;
+      }
+      .mobile-order-btn {
+        flex: 1;
+        padding: 12px;
+        background: #be123c;
+        color: #fff;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        font-family: "Anek Bangla", sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        transition: all 0.2s;
+        animation: btn-pulse 2s infinite;
+      }
+      .mobile-order-btn:hover {
+        background: #9f1239;
+      }
+      .mobile-order-btn:disabled {
+        background: #d1a5b0;
+        cursor: not-allowed;
+        animation: none;
+      }
+      .desc-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .desc-list li {
+        position: relative;
+        padding-left: 34px;
+        margin-bottom: 12px;
+      }
+
+      .desc-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 22px;
+        height: 22px;
+        background: #16a34a;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 700;
+      }
     </style>
   </head>
   <body>
@@ -1848,7 +1914,8 @@ body {
           >
         </h1>
         <p class="hero-sub">
-          ১০০% প্রাকৃতিক Rosella Herbal Tea ২০০ গ্রাম অথবা ১০০ গ্রাম প্যাকে নিন
+          ১০০% প্রাকৃতিক Rosella Herbal Tea ২০০ গ্রাম <br />
+          অথবা ১০০ গ্রাম প্যাকে নিন
         </p>
       </div>
     </section>
@@ -1896,7 +1963,90 @@ body {
     <!-- ══════════════ PACK SIZE CARDS (200gm / 100gm) ══════════════ -->
     <section class="pack-sec">
       <div class="pack-grid">
-        <!-- ২০০ গ্রাম -->
+        <!-- ১০০ গ্রাম (এখন প্রথমে) -->
+        <div class="pack-card pack-sm">
+          <span class="pack-flag pack-flag-alt">ট্রায়াল প্যাক</span>
+          <div class="pack-media">
+            <img
+              src="https://storage.biddabari.online/biddabari-bucket/uploads/all/VFQfEMZ8zypHssEYl6krciARp5XfOAjqwGThsU31.webp"
+              alt="প্রধান পাহাড়ি রোজেলা চা 100 GM"
+              loading="lazy"
+            />
+          </div>
+          <div class="pack-body">
+            <div class="pack-wt">১০০ গ্রাম</div>
+            <h3 class="pack-name">প্রধান পাহাড়ি রোজেলা চা</h3>
+            <p class="pack-tag">
+              Rosella Herbal Tea । প্রথমবারের অভিজ্ঞতার জন্য ছোট প্যাক
+            </p>
+            <div class="pack-price-row">
+              <span class="pack-price">৫৯৯৳</span>
+            </div>
+            <div class="pack-cart">
+              <button
+                type="button"
+                class="pack-add-btn"
+                id="padd2"
+                onclick="cartAdd(2)"
+                style="display: none"
+              >
+                <svg
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l3-8H5.4M7 13 5.4 5M7 13l-2.5 4M17 13l2.5 4M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+                  />
+                </svg>
+                কার্টে যোগ করুন
+              </button>
+              <div class="pack-added-box" id="pbox2" style="display: block">
+                <button
+                  type="button"
+                  class="pack-added-btn"
+                  onclick="cartRemove(2)"
+                >
+                  <svg
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  যোগ হয়েছে
+                </button>
+                <div class="pack-qty-row">
+                  <button
+                    type="button"
+                    class="pack-qb"
+                    onclick="cartQty(2, -1)"
+                  >
+                    −
+                  </button>
+                  <span class="pack-qty-num" id="pqn2">1</span>
+                  <button type="button" class="pack-qb" onclick="cartQty(2, 1)">
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ২০০ গ্রাম (এখন দ্বিতীয়) -->
         <div class="pack-card pack-lg">
           <span class="pack-flag">বেস্ট ভ্যালু</span>
           <div class="pack-media">
@@ -1977,88 +2127,6 @@ body {
             </div>
           </div>
         </div>
-
-        <!-- ১০০ গ্রাম -->
-        <div class="pack-card pack-sm">
-          <span class="pack-flag pack-flag-alt">ট্রায়াল প্যাক</span>
-          <div class="pack-media">
-            <img
-              src="https://storage.biddabari.online/biddabari-bucket/uploads/all/VFQfEMZ8zypHssEYl6krciARp5XfOAjqwGThsU31.webp"
-              alt="প্রধান পাহাড়ি রোজেলা চা 100 GM"
-              loading="lazy"
-            />
-          </div>
-          <div class="pack-body">
-            <div class="pack-wt">১০০ গ্রাম</div>
-            <h3 class="pack-name">প্রধান পাহাড়ি রোজেলা চা</h3>
-            <p class="pack-tag">
-              Rosella Herbal Tea । প্রথমবারের অভিজ্ঞতার জন্য ছোট প্যাক
-            </p>
-            <div class="pack-price-row">
-              <span class="pack-price">৫৯৯৳</span>
-            </div>
-            <div class="pack-cart">
-              <button
-                type="button"
-                class="pack-add-btn"
-                id="padd2"
-                onclick="cartAdd(2)"
-              >
-                <svg
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l3-8H5.4M7 13 5.4 5M7 13l-2.5 4M17 13l2.5 4M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
-                  />
-                </svg>
-                কার্টে যোগ করুন
-              </button>
-              <div class="pack-added-box" id="pbox2" style="display: none">
-                <button
-                  type="button"
-                  class="pack-added-btn"
-                  onclick="cartRemove(2)"
-                >
-                  <svg
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  যোগ হয়েছে
-                </button>
-                <div class="pack-qty-row">
-                  <button
-                    type="button"
-                    class="pack-qb"
-                    onclick="cartQty(2, -1)"
-                  >
-                    −
-                  </button>
-                  <span class="pack-qty-num" id="pqn2">1</span>
-                  <button type="button" class="pack-qb" onclick="cartQty(2, 1)">
-                    +
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -2069,18 +2137,17 @@ body {
           <span class="col-badge">পাহাড়ি রোজেলা চা সম্পর্কে</span>
           <h2 class="col-title">প্রকৃতির লাল রঙে মোড়ানো এক কাপ স্বস্তি</h2>
           <p class="desc-intro">
-            পাহাড়ি রোজেলা চা একটি প্রাকৃতিক হার্বাল ইনফিউশন, যা Hibiscus
-            sabdariffa ফুলের শুকনো বৃতি থেকে তৈরি। উজ্জ্বল লাল রং, হালকা টক
-            স্বাদ আর ফলের মতো সতেজ সুবাস সবটাই সম্পূর্ণ প্রাকৃতিক, কোনো কৃত্রিম
-            রং বা ফ্লেভার ছাড়াই। এই একই ফুল, একই মান শুধু প্যাকের আকার আপনার
-            পছন্দমতো, ২০০ গ্রাম বা ১০০ গ্রাম।
+            পাহাড়ি রোজেলা চা সম্পূর্ণ প্রাকৃতিক Hibiscus sabdariffa ফুলের শুকনো
+            বৃতি থেকে তৈরি। উজ্জ্বল লাল রং, হালকা টক স্বাদ ও সতেজ সুবাস সবই
+            প্রাকৃতিক। একই বিশুদ্ধ মান, শুধু আপনার পছন্দমতো ১০০ গ্রাম বা ২০০
+            গ্রাম প্যাকে।
           </p>
         </div>
 
         <div class="desc-grid">
           <div class="desc-block">
             <div class="desc-block-hd">
-              <i class="fas fa-leaf"></i> উপকারিতা
+              <i class="fas fa-heart-pulse"></i> উপকারিতা
             </div>
             <ul class="desc-list">
               <li>
@@ -2160,7 +2227,7 @@ body {
     </section>
 
     <!-- ══════════════ DELIVERY ══════════════ -->
-    <section class="del-sec">
+    <!-- <section class="del-sec">
       <div class="del-inner">
         <div class="del-hdr">
           <div class="del-badge">
@@ -2205,8 +2272,7 @@ body {
           </div>
         </div>
       </div>
-    </section>
-
+    </section> -->
 
     <!-- <div class="ord-hdr">
       <div class="ord-badge">
@@ -2219,57 +2285,31 @@ body {
     </div> -->
 
     <!-- ══════════════ CHECKOUT ══════════════ -->
-<div id="Checkout">
-    <div class="co-wrap">
-
+    <div id="Checkout">
+      <div class="co-wrap">
         <!-- ORDER FORM HEADER -->
         <div class="ord-hdr">
-            <div class="col-badge"><i class="fas fa-shopping-cart"></i> অর্ডার ফর্ম</div>
-            <h2 class="col-title">এখনই অর্ডার করুন</h2>
-            <p class="col-desc">নিচের ফর্মটি পূরণ করুন, আমরা আপনার ঠিকানায় পৌঁছে দেব</p>
+          <div class="col-badge">
+            <i class="fas fa-shopping-cart"></i> অর্ডার ফর্ম
+          </div>
+          <h2 class="col-title">এখনই অর্ডার করুন</h2>
+          <p class="col-desc">
+            নিচের ফর্মটি পূরণ করুন, আমরা আপনার ঠিকানায় পৌঁছে দেব
+          </p>
         </div>
 
         <!-- Your Products -->
         <h3 class="yp-title">Your Products</h3>
         <div class="yp-grid">
-          <!-- 200gm (checked) -->
-          <div class="yp-row checked" id="ypr1">
+          <!-- 100gm (এখন প্রথমে, checked) -->
+          <div class="yp-row checked" id="ypr2">
             <input
               type="checkbox"
               class="yp-chk"
-              id="ck1"
+              id="ck2"
               checked
-              onchange="ypt(1)"
+              onchange="ypt(2)"
             />
-            <img
-              class="yp-thumb"
-              src="https://storage.biddabari.online/biddabari-bucket/uploads/all/AGMOPEhkqrwgPp3E7u7ZHB09vGbaobj84q7hFfqw.webp"
-              alt="Rosella Tea 200gm"
-            />
-            <div class="yp-body">
-              <div class="yp-n">Prodhan Rosella Tea — 200 GM</div>
-              <div class="yp-bottom">
-                <div class="yp-qw">
-                  <button class="yp-qb" onclick="ypd(1, -1)">−</button>
-                  <input
-                    type="text"
-                    class="yp-qi"
-                    id="qq1"
-                    value="1"
-                    min="1"
-                    onchange="calc()"
-                  />
-                  <button class="yp-qb" onclick="ypd(1, 1)">+</button>
-                </div>
-                <div class="yp-pr">
-                  <span class="yp-new">1099.00৳</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 100gm (unchecked) -->
-          <div class="yp-row" id="ypr2">
-            <input type="checkbox" class="yp-chk" id="ck2" onchange="ypt(2)" />
             <img
               class="yp-thumb"
               src="https://storage.biddabari.online/biddabari-bucket/uploads/all/VFQfEMZ8zypHssEYl6krciARp5XfOAjqwGThsU31.webp"
@@ -2292,6 +2332,36 @@ body {
                 </div>
                 <div class="yp-pr">
                   <span class="yp-new">599.00৳</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 200gm (এখন দ্বিতীয়, unchecked) -->
+          <div class="yp-row" id="ypr1">
+            <input type="checkbox" class="yp-chk" id="ck1" onchange="ypt(1)" />
+            <img
+              class="yp-thumb"
+              src="https://storage.biddabari.online/biddabari-bucket/uploads/all/AGMOPEhkqrwgPp3E7u7ZHB09vGbaobj84q7hFfqw.webp"
+              alt="Rosella Tea 200gm"
+            />
+            <div class="yp-body">
+              <div class="yp-n">Prodhan Rosella Tea — 200 GM</div>
+              <div class="yp-bottom">
+                <div class="yp-qw">
+                  <button class="yp-qb" onclick="ypd(1, -1)">−</button>
+                  <input
+                    type="text"
+                    class="yp-qi"
+                    id="qq1"
+                    value="1"
+                    min="1"
+                    onchange="calc()"
+                  />
+                  <button class="yp-qb" onclick="ypd(1, 1)">+</button>
+                </div>
+                <div class="yp-pr">
+                  <span class="yp-new">1099.00৳</span>
                 </div>
               </div>
             </div>
@@ -2331,15 +2401,19 @@ body {
 
               <!-- Name -->
               <div class="cf">
-                <label>আপনার নাম লিখুন <span class="r">*</span></label>
+                <label
+                  >আপনার ফোন নাম্বারটি লিখুন <span class="r">*</span></label
+                >
                 <input
-                  type="text"
-                  id="fn"
-                  placeholder="Enter your full name"
-                  autocomplete="given-name"
+                  type="tel"
+                  id="ph"
+                  placeholder="01XXXXXXXXX"
+                  autocomplete="tel"
+                  pattern="^01[3-9]\d{8}$"
+                  title="আপনার ১১ সংখ্যার সঠিক ফোন নাম্বারটি প্রয়োজন।"
                 />
-                <div class="emsg" id="fn_e">
-                  আপনার সম্পূর্ণ নাম টি প্রয়োজন।
+                <div class="emsg" id="ph_e">
+                  আপনার সঠিক ১১ সংখ্যার ফোন নাম্বারটি প্রয়োজন (01XXXXXXXXX)।
                 </div>
               </div>
               <!-- Phone -->
@@ -2412,14 +2486,14 @@ body {
       </div>
     </div>
     <!-- Mobile sticky order bar -->
-<div class="mobile-sticky">
-  <div class="mobile-total">
-    <small>মোট মূল্য</small>৳<span id="mbt">590.00</span>
-  </div>
-  <button class="mobile-order-btn" id="mpob" onclick="placeOrder()">
-    🛒 অর্ডার করুন
-  </button>
-</div>
+    <div class="mobile-sticky">
+      <div class="mobile-total">
+        <small>মোট মূল্য</small>৳<span id="mbt">590.00</span>
+      </div>
+      <button class="mobile-order-btn" id="mpob" onclick="placeOrder()">
+        🛒 অর্ডার করুন
+      </button>
+    </div>
 
     <script>
       /* ═══ TIMER ═══ */
@@ -2466,14 +2540,14 @@ body {
           n: "Prodhan Rosella Tea — 200 GM",
           p: 1099,
           img: "https://storage.biddabari.online/biddabari-bucket/uploads/all/AGMOPEhkqrwgPp3E7u7ZHB09vGbaobj84q7hFfqw.webp",
-          sel: true,
+          sel: false, // ← আগে true ছিল, এখন false
         },
         2: {
           sku: "RST-100",
           n: "Prodhan Rosella Tea — 100 GM",
           p: 599,
           img: "https://storage.biddabari.online/biddabari-bucket/uploads/all/VFQfEMZ8zypHssEYl6krciARp5XfOAjqwGThsU31.webp",
-          sel: false,
+          sel: true, // ← আগে false ছিল, এখন true
         },
       };
       let shipMode = "inside";
@@ -2607,53 +2681,53 @@ body {
       }
 
       function calc() {
-  const s = sub(),
-    sh = ship(),
-    tot = s + sh;
-  const tb = document.getElementById("otb");
-  const tf = document.getElementById("otf");
-  const pob = document.getElementById("pob");
-  tb.innerHTML = "";
+        const s = sub(),
+          sh = ship(),
+          tot = s + sh;
+        const tb = document.getElementById("otb");
+        const tf = document.getElementById("otf");
+        const pob = document.getElementById("pob");
+        tb.innerHTML = "";
 
-  if (!anySelected()) {
-    tb.innerHTML =
-      '<tr class="empty-cart-row"><td colspan="2">পণ্য সিলেক্ট করুন</td></tr>';
-    if (pob) pob.disabled = true;
-  } else {
-    if (pob) pob.disabled = false;
+        if (!anySelected()) {
+          tb.innerHTML =
+            '<tr class="empty-cart-row"><td colspan="2">পণ্য সিলেক্ট করুন</td></tr>';
+          if (pob) pob.disabled = true;
+        } else {
+          if (pob) pob.disabled = false;
 
-    [1, 2].forEach((i) => {
-      if (!PD[i].sel) return;
-      const qty = q(i),
-        ln = PD[i].p * qty;
-      const tr = document.createElement("tr");
-      tr.innerHTML = `<td><div class="oi-wrap">
+          [1, 2].forEach((i) => {
+            if (!PD[i].sel) return;
+            const qty = q(i),
+              ln = PD[i].p * qty;
+            const tr = document.createElement("tr");
+            tr.innerHTML = `<td><div class="oi-wrap">
               <button class="o-rm" onclick="rem(${i})">✕</button>
               <img class="oi-img" src="${PD[i].img}" alt=""/>
               <div><div class="oi-nm">${PD[i].n}</div><div class="oi-qty">× ${qty}</div></div>
           </div></td><td>${fmt(ln)}</td>`;
-      tb.appendChild(tr);
-    });
-  }
+            tb.appendChild(tr);
+          });
+        }
 
-  // Subtotal / Delivery / Total — সবসময় দেখাবে, প্রোডাক্ট থাকুক বা না থাকুক
-  const sc =
-    shipMode === "inside"
-      ? `<span class="ship-amt-free">${fmt(sh)}</span>`
-      : `<span class="ship-amt-paid">${fmt(sh)}</span>`;
-  tf.innerHTML =
-    `<tr><th>Subtotal</th><td>${fmt(s)}</td></tr>` +
-    `<tr><th>Delivery Charge</th><td>${sc}</td></tr>` +
-    `<tr class="ttl-row"><th>Total</th><td><strong>${fmt(tot)}</strong></td></tr>`;
-  document.getElementById("btn-t").textContent = fmt(tot);
-    // Mobile sticky bar sync
-      const mbt = document.getElementById("mbt");
-      if (mbt) mbt.textContent = fmt(tot);
-      const mpob = document.getElementById("mpob");
-      if (mpob) mpob.disabled = !anySelected();
+        // Subtotal / Delivery / Total — সবসময় দেখাবে, প্রোডাক্ট থাকুক বা না থাকুক
+        const sc =
+          shipMode === "inside"
+            ? `<span class="ship-amt-free">${fmt(sh)}</span>`
+            : `<span class="ship-amt-paid">${fmt(sh)}</span>`;
+        tf.innerHTML =
+          `<tr><th>Subtotal</th><td>${fmt(s)}</td></tr>` +
+          `<tr><th>Delivery Charge</th><td>${sc}</td></tr>` +
+          `<tr class="ttl-row"><th>Total</th><td><strong>${fmt(tot)}</strong></td></tr>`;
+        document.getElementById("btn-t").textContent = fmt(tot);
+        // Mobile sticky bar sync
+        const mbt = document.getElementById("mbt");
+        if (mbt) mbt.textContent = fmt(tot);
+        const mpob = document.getElementById("mpob");
+        if (mpob) mpob.disabled = !anySelected();
 
-      syncPackUI();
-}
+        syncPackUI();
+      }
 
       function rem(id) {
         PD[id].sel = false;
@@ -2665,11 +2739,16 @@ body {
       /* ═══ PLACE ORDER - API INTEGRATION ═══ */
       function placeOrder() {
         let valid = true;
+        const phonePattern = /^01[3-9]\d{8}$/;
 
         // Field validation
         const fields = [
           { id: "fn", errId: "fn_e", msg: "আপনার সম্পূর্ণ নাম টি প্রয়োজন।" },
-          { id: "ph", errId: "ph_e", msg: "আপনার ফোন নাম্বারটি প্রয়োজন।" },
+          {
+            id: "ph",
+            errId: "ph_e",
+            msg: "আপনার সঠিক ১১ সংখ্যার ফোন নাম্বারটি প্রয়োজন (01XXXXXXXXX)।",
+          },
           {
             id: "ad",
             errId: "ad_e",
@@ -2680,7 +2759,14 @@ body {
         fields.forEach((f) => {
           const inp = document.getElementById(f.id);
           const err = document.getElementById(f.errId);
-          if (!inp.value.trim()) {
+          const val = inp.value.trim();
+
+          if (!val) {
+            inp.classList.add("err");
+            err.textContent = f.msg;
+            err.classList.add("show");
+            valid = false;
+          } else if (f.id === "ph" && !phonePattern.test(val)) {
             inp.classList.add("err");
             err.textContent = f.msg;
             err.classList.add("show");
@@ -2831,9 +2917,12 @@ body {
       }
 
       /* Live clear errors */
+      const phonePattern = /^01[3-9]\d{8}$/;
       ["fn", "ph", "ad"].forEach((id) => {
         document.getElementById(id)?.addEventListener("input", function () {
-          if (this.value.trim()) {
+          const val = this.value.trim();
+          const isValid = id === "ph" ? phonePattern.test(val) : val.length > 0;
+          if (isValid) {
             this.classList.remove("err");
             document.getElementById(id + "_e")?.classList.remove("show");
           }
