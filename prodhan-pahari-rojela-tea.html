@@ -332,7 +332,7 @@
         position: relative;
         overflow: hidden;
         background: linear-gradient(to bottom, #fff1f2, #ffffff, #ffffff);
-        padding: 40px 20px;
+        padding: 40px 20px 20px;
         text-align: center;
       }
       .blob {
@@ -399,6 +399,7 @@
         font-size: 16px;
         color: #4b5563;
         line-height: 1.5;
+        margin-bottom: 24px;
       }
 
       @media (max-width: 576px) {
@@ -406,7 +407,8 @@
           margin-bottom: 25px;
         }
         .hero-sub {
-          font-size: 15px;
+          font-size: 12px;
+          margin-bottom: 15px;
         }
       }
       @media (min-width: 768px) {
@@ -415,10 +417,11 @@
         }
         .hero-h1 {
           font-size: 42px;
-          margin-bottom: 20px;
+          margin-bottom: 12px;
         }
         .hero-sub {
           font-size: 19px;
+          margin-bottom: 16px;
         }
       }
       @media (min-width: 1024px) {
@@ -433,7 +436,7 @@
       .video-section {
         max-width: 950px;
         margin: 0 auto;
-        padding: 0 15px 20px;
+        padding: 0 15px 18px;
       }
       .video-section iframe {
         width: 100%;
@@ -584,12 +587,16 @@
         position: relative;
         aspect-ratio: 16/10;
         overflow: hidden;
-        background: #f2f0ea;
+        background: #f7f6f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .pack-media img {
-        width: 100%;
+        width: 90%;
         height: 100%;
         object-fit: cover;
+        object-position: center;
       }
       .pack-body {
         padding: 18px 22px 24px;
@@ -1959,41 +1966,39 @@
           >
         </h1>
         <p class="hero-sub">
-          ১০০% প্রাকৃতিক Rosella Herbal Tea ২০০ গ্রাম <br />
-          অথবা ১০০ গ্রাম প্যাকে নিন
+          ১০০% প্রাকৃতিক Rosella Herbal Tea | ১০০ গ্রাম ও ২০০ গ্রাম প্যাক
         </p>
       </div>
-    </section>
-
-    <!-- ══════════════ 3. VIDEO ══════════════ -->
-    <div class="video-section">
-      <iframe
-        src="https://www.youtube.com/embed/VOtLRju0OWI?autoplay=1&mute=0&loop=1&playlist=VOtLRju0OWI"
-        allow="autoplay; encrypted-media; fullscreen"
-        allowfullscreen
-        loading="lazy"
-        title="Prodhan Tea"
-      >
-      </iframe>
-    </div>
-
-    <!-- CTA 2 -->
-    <div class="cta-section">
-      <a
-        class="btn-order"
-        href="#Checkout"
-        onclick="gtmAddToCart('video_section')"
-        >এখনই অর্ডার করুন &nbsp;<i class="fas fa-arrow-down"></i
-      ></a>
-      <div class="cta-secondary">
-        <a class="btn-wa" href="https://wa.link/jwi3gl" target="_blank"
-          ><i class="fab fa-whatsapp"></i> হোয়াটস অ্যাপ</a
+      <!-- ══════════════ 3. VIDEO ══════════════ -->
+      <div class="video-section">
+        <iframe
+          src="https://www.youtube.com/embed/VOtLRju0OWI?autoplay=1&mute=1&si=5m71E5QVmRbIMk46"
+          allow="autoplay; encrypted-media; fullscreen"
+          allowfullscreen
+          loading="lazy"
+          title="Prodhan Tea"
         >
-        <a class="btn-call" href="tel:09643330000"
-          ><i class="fas fa-phone-volume"></i> কল করুন</a
-        >
+        </iframe>
       </div>
-    </div>
+
+      <!-- CTA 2 -->
+      <div class="cta-section">
+        <a
+          class="btn-order"
+          href="#Checkout"
+          onclick="gtmAddToCart('video_section')"
+          >এখনই অর্ডার করুন &nbsp;<i class="fas fa-arrow-down"></i
+        ></a>
+        <div class="cta-secondary">
+          <a class="btn-wa" href="https://wa.link/jwi3gl" target="_blank"
+            ><i class="fab fa-whatsapp"></i> হোয়াটস অ্যাপ</a
+          >
+          <a class="btn-call" href="tel:09643330000"
+            ><i class="fas fa-phone-volume"></i> কল করুন</a
+          >
+        </div>
+      </div>
+    </section>
 
     <!-- ══════════════ 4. COLLECTION HEADER ══════════════ -->
     <div class="collection-header">
