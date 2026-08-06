@@ -210,7 +210,7 @@
            Call = transparent bg, #0084FF border+text, hover fill
         ══════════════════════════════════ */
       .cta-section {
-        padding: 16px 0px;
+        padding: 16px 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -795,61 +795,16 @@
         margin-bottom: 28px;
       }
       .desc-block {
-        position: relative;
-        overflow: hidden;
-        z-index: 0;
         background: #fff;
         border: 1px solid #ece7db;
         border-radius: 14px;
         padding: 20px;
-        transition: transform 0.35s ease-out;
-      }
-
-      .desc-block:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: -16px;
-        right: -16px;
-        background: linear-gradient(135deg, #e11d48, #9f1239);
-        height: 38px;
-        width: 42px;
-        border-radius: 32px;
-        transform: scale(1);
-        transform-origin: 50% 50%;
-        transition: transform 0.35s ease-out;
       }
 
       .desc-block:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 24px rgba(190, 18, 60, 0.18);
-      }
+        transform: translateY(-0.6px);
 
-      .desc-block:hover:before {
-        transform: scale(28);
-      }
-
-      .desc-block:hover .desc-block-hd {
-        color: #fff;
-        transition: color 0.5s ease-out;
-      }
-
-      .desc-block:hover .desc-block-hd i {
-        color: rgba(255, 255, 255, 0.85);
-        transition: color 0.5s ease-out;
-      }
-
-      .desc-block:hover .desc-list li {
-        color: rgba(255, 255, 255, 0.9);
-        transition: color 0.5s ease-out;
-      }
-
-      .desc-block:hover .desc-list li::before {
-        background: #fff;
-        color: #be123c;
-        transition:
-          background 0.5s ease-out,
-          color 0.5s ease-out;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
       }
 
       .desc-block-hd {
@@ -2246,7 +2201,7 @@
             <div class="desc-brew-t">কীভাবে বানাবেন</div>
             <p class="desc-brew-p">
               এক কাপ ফুটন্ত পানিতে ১ চা চামচ রোজেলা মিশিয়ে ৫-১০ মিনিট রেখে দিন।
-              চাইলে মধু বা লেবু যোগ করুন গরম বা বরফসহ ঠান্ডা, দুইভাবেই উপভোগ
+              চাইলে মধু বা লেবু যোগ করুন — গরম বা বরফসহ ঠান্ডা, দুইভাবেই উপভোগ
               করুন।
             </p>
           </div>
